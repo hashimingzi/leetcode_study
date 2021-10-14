@@ -1,4 +1,4 @@
-const ListNode = require("./ListNode")
+const ListNode = require("./ListNode");
 
 class LinkedList {
   constructor() {
@@ -21,6 +21,7 @@ class LinkedList {
       current.next = listnode;
     }
     this.length++;
+    return this;
   }
 
   insert(position, element) {
@@ -106,3 +107,5 @@ class LinkedList {
     return string;
   }
 }
+
+module.exports = LinkedList;
