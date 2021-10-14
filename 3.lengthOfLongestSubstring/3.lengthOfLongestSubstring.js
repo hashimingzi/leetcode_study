@@ -27,6 +27,9 @@ var lengthOfLongestSubstring2 = function (s) {
     }
     maxlen = ss.size > maxlen ? ss.size : maxlen;
     ss.delete(s[i]);
+    if (j === s.length - 1) {
+      j++;
+    }
   }
   return maxlen;
 };
